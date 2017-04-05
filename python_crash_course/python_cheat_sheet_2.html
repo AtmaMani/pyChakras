@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>python_cheat_sheet_1</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>python_cheat_sheet2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11778,43 +11778,11 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Python-cheat-sheet---data-structures">Python cheat sheet - data structures<a class="anchor-link" href="#Python-cheat-sheet---data-structures">&#182;</a></h1><p>A set of reference materials to help you in those occassional bouts of forgetfulness.</p>
-<p><strong>Table of contents</strong></p>
+<h1 id="Python-cheat-sheet---iterations">Python cheat sheet - iterations<a class="anchor-link" href="#Python-cheat-sheet---iterations">&#182;</a></h1><p><strong>Table of contents</strong></p>
 <ul>
-<li><a href="#Play-area">Play area</a></li>
-<li><a href="#Python-tutorials-and-references">Python tutorials and references</a></li>
-<li><a href="#Data-structures">Data structures</a><ul>
-<li><a href="#Lists">Lists</a><ul>
-<li><a href="#list-slicing">list slicing</a></li>
-<li><a href="#append-and-extend">append and extend</a></li>
-<li><a href="#mutability-of-lists">mutability of lists</a></li>
-</ul>
-</li>
-<li><a href="#Dictionaries">Dictionaries</a><ul>
-<li><a href="#mutability-of-dicts">mutability of dicts</a></li>
-<li><a href="#dict-exploration">dict exploration</a></li>
-</ul>
-</li>
-<li><a href="#Tuples">Tuples</a><ul>
-<li><a href="#mutability-of-tuples">mutability of tuples</a></li>
-</ul>
-</li>
-<li><a href="#Sets">Sets</a><ul>
-<li><a href="#set-from-dictionary">set from dictionary</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#loops">Loops</a><ul>
-<li><a href="#for-loop">for loop</a></li>
-<li><a href="#while-loop">while loop</a></li>
-</ul>
-</li>
-<li><a href="#Comprehensions">Comprehensions</a><ul>
-<li><a href="#List-comprehension">List comprehension</a></li>
-<li><a href="#Dictionary-comprehension">Dictionary comprehension</a></li>
-</ul>
-</li>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Classes">Classes</a></li>
+<li><a href="#Exception-handling">Exception handling</a></li>
 </ul>
 
 </div>
@@ -11825,134 +11793,11 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Play-area">Play area<a class="anchor-link" href="#Play-area">&#182;</a></h2><p>Get a feel for Python in Jupyter notebooks. Type commands, press Shift + Enter to run the cells and get the outputs below each cell</p>
+<h2 id="Functions">Functions<a class="anchor-link" href="#Functions">&#182;</a></h2><p>Specify optional parameters in the end. Specify the default values for optional parameters with = value notation</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">15</span> <span class="o">+</span> <span class="mi">15</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># the pound sighn &#39;#&#39; are comments in Python</span>
-<span class="s2">&quot;string1&quot;</span> <span class="o">+</span> <span class="s2">&quot; string2&quot;</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># import a module or site-package using &#39;import&#39; keyword.</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#list contents of current dir</span>
-<span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># import sys module and find the OS of the current computer</span>
-<span class="kn">import</span> <span class="nn">...</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># use OS module to find the number of cores on the current computer</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># use datetime module to find the current date and time</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Python-tutorials-and-references">Python tutorials and references<a class="anchor-link" href="#Python-tutorials-and-references">&#182;</a></h2><p>Following are some resources to learn Python</p>
-<ol>
-<li>Article with reviews about various tutorials <a href="http://noeticforce.com/best-free-tutorials-to-learn-python-pdfs-ebooks-online-interactive">http://noeticforce.com/best-free-tutorials-to-learn-python-pdfs-ebooks-online-interactive</a></li>
-<li>user voted list of tutorials on quora: <a href="https://www.quora.com/What-is-the-best-online-resource-to-learn-Python">https://www.quora.com/What-is-the-best-online-resource-to-learn-Python</a></li>
-<li>Google's Python class <a href="https://developers.google.com/edu/python/">https://developers.google.com/edu/python/</a></li>
-<li><a href="https://www.learnpython.org/">https://www.learnpython.org/</a></li>
-<li>Python reference documentation <a href="https://docs.python.org/3/">https://docs.python.org/3/</a></li>
-<li>A list of Python libraries for various applications: <a href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></li>
-</ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-structures">Data structures<a class="anchor-link" href="#Data-structures">&#182;</a></h2><h3 id="Lists">Lists<a class="anchor-link" href="#Lists">&#182;</a></h3>
-<pre><code>l1 = list()
-l2 = [] #both empty lists
-l3 = [1,2,3]</code></pre>
+<pre><code>def func_name(arg1, arg2=None):
+    operations
+    return value</code></pre>
 
 </div>
 </div>
@@ -11962,29 +11807,11 @@ l3 = [1,2,3]</code></pre>
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l1</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
-<span class="nb">type</span><span class="p">(</span><span class="n">l1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">func_add_numbers</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span><span class="p">)</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[1]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>list</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -11994,8 +11821,7 @@ l3 = [1,2,3]</code></pre>
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l2</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="nb">len</span><span class="p">(</span><span class="n">l2</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">func_add_numbers</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12012,7 +11838,7 @@ l3 = [1,2,3]</code></pre>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0</pre>
+<pre>12</pre>
 </div>
 
 </div>
@@ -12020,23 +11846,13 @@ l3 = [1,2,3]</code></pre>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="list-slicing">list slicing<a class="anchor-link" href="#list-slicing">&#182;</a></h4>
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
-<span class="n">l3</span><span class="p">[:]</span> <span class="c1">#prints all</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">func_add_numbers</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">34</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12053,7 +11869,7 @@ l3 = [1,2,3]</code></pre>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[1, 2, 3, 4, 5, 6, 7, 8, 9]</pre>
+<pre>36</pre>
 </div>
 
 </div>
@@ -12067,1326 +11883,7 @@ l3 = [1,2,3]</code></pre>
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l3</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[4]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>1</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l3</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span> <span class="c1">#prints first 4. the : is slicing operator</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[5]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[1, 2, 3, 4]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l3</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span> <span class="c1">#upto 1 less than highest index</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[6]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[5, 6, 7]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">l3</span><span class="p">)</span>
-<span class="n">l3</span><span class="p">[</span><span class="n">a</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1">#negative index for traversing in opposite dir</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[7]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>9</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l3</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">:]</span> <span class="c1">#to pick the last 4 elements</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[8]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[6, 7, 8, 9]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l3</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span> <span class="c1">#happens inplace</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l3</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[10]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[9, 8, 7, 6, 5, 4, 3, 2, 1]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="append-and-extend">append and extend<a class="anchor-link" href="#append-and-extend">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l3</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="c1">#to add new values</span>
-<span class="n">l3</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[11]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[9, 8, 7, 6, 5, 4, 3, 2, 1, 10]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">]</span>
-<span class="n">l3</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a1</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l3</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[13]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">]</span>
-<span class="n">l3</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">a1</span><span class="p">)</span> <span class="c1">#to splice two lists. need not be same data type</span>
-<span class="n">l3</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[14]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[9, 8, 7, 6, 5, 4, 3, 2, 1, 10, [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], &#39;a&#39;, &#39;b&#39;, &#39;c&#39;]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lol</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]]</span> <span class="c1">#lol - list of lists</span>
-<span class="nb">len</span><span class="p">(</span><span class="n">lol</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[15]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>2</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lol</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
-<span class="n">lol</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[16]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[6, 5, 4]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="mutability-of-lists">mutability of lists<a class="anchor-link" href="#mutability-of-lists">&#182;</a></h4><p>list elements are mutable and can be changed</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l3</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[17]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[9, 8, 7, 6, 5, 4, 3, 2, 1, 10, [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], &#39;a&#39;, &#39;b&#39;, &#39;c&#39;]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l3</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;solar fare&#39;</span> <span class="c1">#modify the last element</span>
-<span class="n">l3</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[18]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[9, 8, 7, 6, 5, 4, 3, 2, 1, 10, [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], &#39;a&#39;, &#39;b&#39;, &#39;solar fare&#39;]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#list.insert(index, object) to insert a new value</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">l3</span><span class="p">)))</span> <span class="c1">#before insertion</span>
-<span class="n">l3</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;two&#39;</span><span class="p">)</span>
-<span class="n">l3</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>14
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[19]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[9, &#39;two&#39;, 8, 7, 6, 5, 4, 3, 2, 1, 10, [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], &#39;a&#39;, &#39;b&#39;, &#39;solar fare&#39;]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># l3.pop(index) remove item at index and give that item</span>
-<span class="n">l3</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span> <span class="c1">#remove 3rd item from last and give them</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[20]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;a&#39;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l3</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[21]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[9, &#39;two&#39;, 8, 7, 6, 5, 4, 3, 2, 1, 10, [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], &#39;b&#39;, &#39;solar fare&#39;]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># l3.clear()  to empty a list</span>
-<span class="n">lol</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
-<span class="n">lol</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[22]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">],</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
-<span class="n">l3</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[23]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[9, 8, 7, 6, 5, 4, 3, 2, 1, 10, [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], &#39;a&#39;, &#39;b&#39;, &#39;c&#39;, 10, 10, 10]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># l3.count(value) counts the number of occurrences of a value</span>
-<span class="n">l3</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[24]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>4</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># l3.index(value, &lt;start, &lt;stop&gt;&gt;) returns the first occurrence of element</span>
-<span class="n">l3</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[25]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>9</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Dictionaries">Dictionaries<a class="anchor-link" href="#Dictionaries">&#182;</a></h3><p>Key value pairs</p>
-
-<pre><code>d1 = dict()
-d2 = {'key1':value,
-      'key2':value2}</code></pre>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d1</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-<span class="n">d2</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="nb">len</span><span class="p">(</span><span class="n">d2</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[26]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d3</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;day&#39;</span><span class="p">:</span><span class="s1">&#39;Thursday&#39;</span><span class="p">,</span>
-     <span class="s1">&#39;day_of_week&#39;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span>
-     <span class="s1">&#39;start_of_week&#39;</span><span class="p">:</span><span class="s1">&#39;Sunday&#39;</span><span class="p">,</span>
-     <span class="s1">&#39;day_of_year&#39;</span><span class="p">:</span><span class="mi">123</span><span class="p">,</span>
-     <span class="s1">&#39;dod&#39;</span><span class="p">:{</span><span class="s1">&#39;month_of_year&#39;</span><span class="p">:</span><span class="s1">&#39;Feb&#39;</span><span class="p">,</span>
-           <span class="s1">&#39;year&#39;</span><span class="p">:</span><span class="mi">2017</span><span class="p">},</span>
-     <span class="s1">&#39;list1&#39;</span><span class="p">:[</span><span class="mi">8</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">66</span><span class="p">]}</span>
-<span class="nb">len</span><span class="p">(</span><span class="n">d3</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[27]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>6</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d3</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[28]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>dict_keys([&#39;day&#39;, &#39;day_of_week&#39;, &#39;start_of_week&#39;, &#39;day_of_year&#39;, &#39;dod&#39;, &#39;list1&#39;])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d3</span><span class="p">[</span><span class="s1">&#39;start_of_week&#39;</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[29]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;Sunday&#39;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">d3</span><span class="p">[</span><span class="s1">&#39;dod&#39;</span><span class="p">])</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[30]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>dict</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># now that dod is a dict, get its keys</span>
-<span class="n">d3</span><span class="p">[</span><span class="s1">&#39;dod&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[31]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>dict_keys([&#39;month_of_year&#39;, &#39;year&#39;])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d3</span><span class="p">[</span><span class="s1">&#39;dod&#39;</span><span class="p">][</span><span class="s1">&#39;year&#39;</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[32]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>2017</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="mutability-of-dicts">mutability of dicts<a class="anchor-link" href="#mutability-of-dicts">&#182;</a></h4><p>dicts like lists are mutable</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d3</span><span class="p">[</span><span class="s1">&#39;day_of_year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">48</span>
-<span class="n">d3</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[33]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{&#39;day&#39;: &#39;Thursday&#39;,
- &#39;day_of_week&#39;: 5,
- &#39;day_of_year&#39;: -48,
- &#39;dod&#39;: {&#39;month_of_year&#39;: &#39;Feb&#39;, &#39;year&#39;: 2017},
- &#39;list1&#39;: [8, 7, 66],
- &#39;start_of_week&#39;: &#39;Sunday&#39;}</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># insert new values just by adding kvp (key value pair)</span>
-<span class="n">d3</span><span class="p">[</span><span class="s1">&#39;workout_of_the_week&#39;</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;bungee jumpging&#39;</span>
-<span class="n">d3</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[46]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{&#39;day&#39;: &#39;Thursday&#39;,
- &#39;day_of_week&#39;: 5,
- &#39;day_of_year&#39;: -48,
- &#39;dod&#39;: {&#39;month_of_year&#39;: &#39;Feb&#39;, &#39;year&#39;: 2017},
- &#39;list1&#39;: [8, 7, 66],
- &#39;start_of_week&#39;: &#39;Sunday&#39;,
- &#39;workout_of_the_week&#39;: &#39;bungee jumpging&#39;}</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="dict-exploration">dict exploration<a class="anchor-link" href="#dict-exploration">&#182;</a></h4><p>what happens when you inquire a key thats not present</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d3</span><span class="p">[</span><span class="s1">&#39;dayyy&#39;</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">KeyError</span>                                  Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-47-c500fcefcb1b&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>d3<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-blue-intense-fg ansi-bold">&#39;dayyy&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">]</span>
-
-<span class="ansi-red-intense-fg ansi-bold">KeyError</span>: &#39;dayyy&#39;</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># safe way to get elements is to use get()</span>
-<span class="n">d3</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;day&#39;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[48]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;Thursday&#39;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d3</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;dayyy&#39;</span><span class="p">)</span> <span class="c1">#retuns None</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># use items() to get a list of tuples of key value pairs</span>
-<span class="n">d3</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[50]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>dict_items([(&#39;day_of_week&#39;, 5), (&#39;day&#39;, &#39;Thursday&#39;), (&#39;workout_of_the_week&#39;, &#39;bungee jumpging&#39;), (&#39;dod&#39;, {&#39;year&#39;: 2017, &#39;month_of_year&#39;: &#39;Feb&#39;}), (&#39;list1&#39;, [8, 7, 66]), (&#39;day_of_year&#39;, -48), (&#39;start_of_week&#39;, &#39;Sunday&#39;)])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># use values() to get only the values</span>
-<span class="n">d3</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[51]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>dict_values([5, &#39;Thursday&#39;, &#39;bungee jumpging&#39;, {&#39;year&#39;: 2017, &#39;month_of_year&#39;: &#39;Feb&#39;}, [8, 7, 66], -48, &#39;Sunday&#39;])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Tuple">Tuple<a class="anchor-link" href="#Tuple">&#182;</a></h3><p>tuple is a immutable list</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">t1</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">()</span>
-<span class="n">t2</span> <span class="o">=</span> <span class="p">()</span>
-<span class="nb">len</span><span class="p">(</span><span class="n">t1</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[58]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">t2</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[59]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>tuple</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">t3</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
-<span class="n">t3</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[60]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>3</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#use it just like a list</span>
-<span class="n">t3</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[61]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;b&#39;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="mutability-of-tuples">mutability of tuples<a class="anchor-link" href="#mutability-of-tuples">&#182;</a></h4><p>cannot modify tuples.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">t3</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;good evening&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">func_add_numbers</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -13404,10 +11901,10 @@ d2 = {'key1':value,
 <pre>
 <span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
 <span class="ansi-red-intense-fg ansi-bold">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-62-8d3766e24208&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>t3<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">0</span><span class="ansi-yellow-intense-fg ansi-bold">]</span> <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;good evening&#39;</span>
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-4-0d259ef4c90e&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>func_add_numbers<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
 
-<span class="ansi-red-intense-fg ansi-bold">TypeError</span>: &#39;tuple&#39; object does not support item assignment</pre>
+<span class="ansi-red-intense-fg ansi-bold">TypeError</span>: func_add_numbers() missing 1 required positional argument: &#39;num1&#39;</pre>
 </div>
 </div>
 
@@ -13420,21 +11917,98 @@ d2 = {'key1':value,
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Sets">Sets<a class="anchor-link" href="#Sets">&#182;</a></h3><p>set is a sequence of unique values</p>
+<h2 id="Classes">Classes<a class="anchor-link" href="#Classes">&#182;</a></h2><p>Everything is an object in Python including native types. You define class names with camel casing.
+You define the constructor with special name <code>__init__()</code>. The fields (private) are denoted with <code>_variable_name</code> specification and properties are decorated with <code>@property</code> decorator.</p>
+<p>Fields and properties are accessed within the class using <code>self.name</code> notation. This helps differentiate a class field / property from a local variable or method argument of the same name.</p>
+<h3 id="A-simple-class">A simple class<a class="anchor-link" href="#A-simple-class">&#182;</a></h3>
+<pre><code>class MyClass:
+    _local_variables = "value"
 
-<pre><code>s1 = set(&lt;sequence&gt;)
-s2 = {}</code></pre>
+    def __init__(self, args):  #constructor
+        statements
+        self._local_variables = args   # assign values to fields
+
+    def func_1(self, args):
+        statements
+
+</code></pre>
+<p>You use this method by instantiating an object.</p>
+
+<pre><code>obj1 = myClass(args_defined_in_constructor)</code></pre>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
-<span class="n">s1</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define a class to hold a satellite or aerial imagery file. Its properties give information</span>
+<span class="c1"># such as location of the ground, area, dimensions, spatial and spectral resolution etc.</span>
+
+<span class="k">class</span> <span class="nc">ImageryObject</span><span class="p">:</span>
+    <span class="n">_default_gsd</span> <span class="o">=</span> <span class="mf">5.0</span>
+    
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_path</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_file_path</span> <span class="o">=</span> <span class="n">file_path</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_gps_location</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+        
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">bands</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1">#count number of bands</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="mi">3</span>
+        <span class="k">return</span> <span class="n">count</span>
+    
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">gsd</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># logic to calculate the ground sample distance</span>
+        <span class="n">gsd</span> <span class="o">=</span> <span class="mf">10.0</span>
+        <span class="k">return</span> <span class="n">gsd</span>
+    
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">address</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># logic to reverse geocode the self._gps_location to get address</span>
+        <span class="c1"># reverse geocode self._gps_location</span>
+        <span class="n">address</span> <span class="o">=</span> <span class="s2">&quot;123 XYZ Street&quot;</span>
+        <span class="k">return</span> <span class="n">address</span>
+    
+    <span class="c1">#class methods</span>
+    <span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1">#logic to display picture</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;image is displayed&quot;</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">shuffle_bands</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1">#logic to shift RGB combination</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;shifting pands&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># class instantiation</span>
+<span class="n">img1</span> <span class="o">=</span> <span class="n">ImageryObject</span><span class="p">(</span><span class="s2">&quot;user\img</span><span class="se">\f</span><span class="s2">ile.img&quot;</span><span class="p">)</span> <span class="c1">#pass value to constructor</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">img1</span><span class="o">.</span><span class="n">address</span>
 </pre></div>
 
 </div>
@@ -13446,12 +12020,12 @@ s2 = {}</code></pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[63]:</div>
+<div class="prompt output_prompt">Out[8]:</div>
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>{1, 2, 4, 5}</pre>
+<pre>&#39;123 XYZ Street&#39;</pre>
 </div>
 
 </div>
@@ -13462,11 +12036,10 @@ s2 = {}</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span> 
-<span class="n">s2</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">img1</span><span class="o">.</span><span class="n">_default_gsd</span>
 </pre></div>
 
 </div>
@@ -13478,12 +12051,12 @@ s2 = {}</code></pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[64]:</div>
+<div class="prompt output_prompt">Out[9]:</div>
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>{1, 2, 3}</pre>
+<pre>5.0</pre>
 </div>
 
 </div>
@@ -13491,27 +12064,13 @@ s2 = {}</code></pre>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="set-from-dictionary">set from dictionary<a class="anchor-link" href="#set-from-dictionary">&#182;</a></h4><p>Works on dicts too. But will return a set of keys only, not values.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># works on dicts too</span>
-<span class="n">s3_repeat_values</span> <span class="o">=</span> <span class="nb">set</span><span class="p">({</span><span class="s1">&#39;k1&#39;</span><span class="p">:</span><span class="s1">&#39;v1&#39;</span><span class="p">,</span>
-                   <span class="s1">&#39;k2&#39;</span><span class="p">:</span><span class="s1">&#39;v1&#39;</span><span class="p">,</span>
-                   <span class="s1">&#39;k3&#39;</span><span class="p">:</span><span class="s1">&#39;v2&#39;</span><span class="p">})</span>
-<span class="n">s3_repeat_values</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">img1</span><span class="o">.</span><span class="n">_gps_location</span>
 </pre></div>
 
 </div>
@@ -13523,12 +12082,12 @@ s2 = {}</code></pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[65]:</div>
+<div class="prompt output_prompt">Out[10]:</div>
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>{&#39;k1&#39;, &#39;k2&#39;, &#39;k3&#39;}</pre>
+<pre>(3, 4)</pre>
 </div>
 
 </div>
@@ -13539,140 +12098,10 @@ s2 = {}</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">s3_repeat_values</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[66]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>set</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># repeating keys</span>
-<span class="n">s3_repeat_keys</span> <span class="o">=</span> <span class="nb">set</span><span class="p">({</span><span class="s1">&#39;k1&#39;</span><span class="p">:</span><span class="s1">&#39;v1&#39;</span><span class="p">,</span>
-                     <span class="s1">&#39;k1&#39;</span><span class="p">:</span><span class="s1">&#39;v2&#39;</span><span class="p">})</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s3_repeat_keys</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[68]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{&#39;k1&#39;}</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Note. When you create a dict with duplicate keys, Python just keeps the last occurrence of the kvp. It thinks the kvp needs to be updated to the latest value</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d80</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;k1&#39;</span><span class="p">:</span><span class="s1">&#39;v1&#39;</span><span class="p">,</span> <span class="s1">&#39;k2&#39;</span><span class="p">:</span><span class="s1">&#39;v2&#39;</span><span class="p">,</span> <span class="s1">&#39;k1&#39;</span><span class="p">:</span><span class="s1">&#39;v45&#39;</span><span class="p">}</span> <span class="c1"># k1 is repeated</span>
-<span class="n">d80</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[69]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{&#39;k1&#39;: &#39;v45&#39;, &#39;k2&#39;: &#39;v2&#39;}</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Loops">Loops<a class="anchor-link" href="#Loops">&#182;</a></h2><h3 id="for-loop">for loop<a class="anchor-link" href="#for-loop">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">]</span>
-<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">list1</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">img1</span><span class="o">.</span><span class="n">shuffle_bands</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -13687,13 +12116,8 @@ s2 = {}</code></pre>
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>1
-2
-3
-4
-5
-6
-7
+<pre>shifting pands
+image is displayed
 </pre>
 </div>
 </div>
@@ -13704,11 +12128,12 @@ s2 = {}</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">list1</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">element</span><span class="p">,</span> <span class="s2">&quot; squared &quot;</span><span class="p">,</span> <span class="n">element</span><span class="o">*</span><span class="n">element</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get help on any object. Only public methods, properties are displayed.</span>
+<span class="c1"># fields are private, properties are public. Class variables beginning with _ are private fields.</span>
+<span class="n">help</span><span class="p">(</span><span class="n">img1</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -13723,13 +12148,34 @@ s2 = {}</code></pre>
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>1  squared  1
-2  squared  4
-3  squared  9
-4  squared  16
-5  squared  25
-6  squared  36
-7  squared  49
+<pre>Help on ImageryObject in module __main__ object:
+
+class ImageryObject(builtins.object)
+ |  Methods defined here:
+ |  
+ |  __init__(self, file_path)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |  
+ |  display(self)
+ |      #class methods
+ |  
+ |  shuffle_bands(self)
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |  
+ |  __dict__
+ |      dictionary for instance variables (if defined)
+ |  
+ |  __weakref__
+ |      list of weak references to the object (if defined)
+ |  
+ |  address
+ |  
+ |  bands
+ |  
+ |  gsd
+
 </pre>
 </div>
 </div>
@@ -13738,13 +12184,44 @@ s2 = {}</code></pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Exception-handling">Exception handling<a class="anchor-link" href="#Exception-handling">&#182;</a></h2><p>Exceptions are classes. You can define your own by inheriting from <code>Exception</code> class.</p>
+
+<pre><code>try:
+    statements
+
+except Exception_type1 as e1:
+    handling statements
+
+except Exception_type2 as e2:
+    specific handling statements
+
+except Exception as generic_ex:
+    generic handling statements
+
+else:
+    some more statements
+
+finally:
+    default statements which will always be executed</code></pre>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">count</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="mi">20</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">count</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="n">img2</span> <span class="o">=</span> <span class="n">ImageryObject</span><span class="p">(</span><span class="s2">&quot;user\img</span><span class="se">\f</span><span class="s2">ile2.img&quot;</span><span class="p">)</span>
+    <span class="n">img2</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;something bad happened&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -13759,15 +12236,7 @@ s2 = {}</code></pre>
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>11
-12
-13
-14
-15
-16
-17
-18
-19
+<pre>image is displayed
 </pre>
 </div>
 </div>
@@ -13776,25 +12245,20 @@ s2 = {}</code></pre>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Comprehensions">Comprehensions<a class="anchor-link" href="#Comprehensions">&#182;</a></h2><p>Comprehensions are an effective way to loop through sequences</p>
-<h3 id="List-comprehension">List comprehension<a class="anchor-link" href="#List-comprehension">&#182;</a></h3>
-<pre><code>   [operation for index in sequence condition] </code></pre>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">list2_comp</span> <span class="o">=</span> <span class="p">[</span><span class="n">e</span><span class="o">*</span><span class="n">e</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">list1</span><span class="p">]</span>
-<span class="n">list2_comp</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="n">img2</span> <span class="o">=</span> <span class="n">ImageryObject</span><span class="p">(</span><span class="s2">&quot;user\img</span><span class="se">\f</span><span class="s2">ile2.img&quot;</span><span class="p">)</span>
+    <span class="n">img2</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;something bad happened&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;else block&quot;</span><span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;finally block&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -13806,14 +12270,14 @@ s2 = {}</code></pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[73]:</div>
+<div class="prompt"></div>
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[1, 4, 9, 16, 25, 36, 49]</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>image is displayed
+else block
+finally block
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -13822,11 +12286,18 @@ s2 = {}</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">list2_even</span> <span class="o">=</span> <span class="p">[</span><span class="n">e</span><span class="o">*</span><span class="n">e</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">list1</span> <span class="k">if</span> <span class="n">e</span><span class="o">%</span><span class="k">2</span>==0]
-<span class="n">list2_even</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="n">img2</span> <span class="o">=</span> <span class="n">ImageryObject</span><span class="p">()</span>
+    <span class="n">img2</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;something bad happened&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;else block&quot;</span><span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;finally block&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -13838,58 +12309,31 @@ s2 = {}</code></pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[74]:</div>
+<div class="prompt"></div>
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[4, 16, 36]</pre>
-</div>
-
-</div>
-
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>something bad happened
+finally block
+</pre>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Dictionary-comprehension">Dictionary comprehension<a class="anchor-link" href="#Dictionary-comprehension">&#182;</a></h3><p>Same as list comprehension, but instead of lists, it returns a dictionary. You use {} instead of []</p>
-
-<pre><code>{key:value for key, value in dictionary if condition}</code></pre>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d3</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;day&#39;</span><span class="p">:</span><span class="s1">&#39;Thursday&#39;</span><span class="p">,</span>
-     <span class="s1">&#39;day_of_week&#39;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span>
-     <span class="s1">&#39;start_of_week&#39;</span><span class="p">:</span><span class="s1">&#39;Sunday&#39;</span><span class="p">,</span>
-     <span class="s1">&#39;day_of_year&#39;</span><span class="p">:</span><span class="mi">123</span><span class="p">,</span>
-     <span class="s1">&#39;dod&#39;</span><span class="p">:{</span><span class="s1">&#39;month_of_year&#39;</span><span class="p">:</span><span class="s1">&#39;Feb&#39;</span><span class="p">,</span>
-           <span class="s1">&#39;year&#39;</span><span class="p">:</span><span class="mi">2017</span><span class="p">},</span>
-     <span class="s1">&#39;list1&#39;</span><span class="p">:[</span><span class="mi">8</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">66</span><span class="p">]}</span>
-</pre></div>
-
-</div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># get those kvp whose value is a list</span>
-<span class="p">{</span><span class="n">k</span><span class="p">:</span><span class="n">v</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">d3</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="o">==</span><span class="nb">list</span><span class="p">}</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="n">img2</span> <span class="o">=</span> <span class="n">ImageryObject</span><span class="p">()</span>
+    <span class="n">img2</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;something bad happened&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;exactly what whent bad? : &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ex</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -13901,37 +12345,32 @@ s2 = {}</code></pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[43]:</div>
+<div class="prompt"></div>
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{&#39;list1&#39;: [8, 7, 66]}</pre>
-</div>
-
-</div>
-
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>something bad happened
+exactly what whent bad? : __init__() missing 1 required positional argument: &#39;file_path&#39;
+</pre>
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
 </div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>reverse keys and values? - works only when values are immutable types. hence filter them out</p>
 
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d4</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="p">:</span><span class="n">v</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">d3</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="nb">list</span><span class="p">,</span> <span class="nb">dict</span><span class="p">]}</span>
-<span class="n">d4</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="n">img2</span> <span class="o">=</span> <span class="n">ImageryObject</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">)</span>
+    <span class="n">img2</span><span class="o">.</span><span class="n">dddisplay</span><span class="p">()</span>
+
+<span class="k">except</span> <span class="ne">TypeError</span> <span class="k">as</span> <span class="n">terr</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;looks like you forgot a parameter&quot;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;nope, it went worng here: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ex</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -13943,53 +12382,12 @@ s2 = {}</code></pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[45]:</div>
+<div class="prompt"></div>
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{&#39;day&#39;: &#39;Thursday&#39;,
- &#39;day_of_week&#39;: 5,
- &#39;day_of_year&#39;: 123,
- &#39;start_of_week&#39;: &#39;Sunday&#39;}</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>nope, it went worng here: &#39;ImageryObject&#39; object has no attribute &#39;dddisplay&#39;
+</pre>
 </div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># reverse keys and values</span>
-<span class="n">d4_reverse</span> <span class="o">=</span> <span class="p">{</span><span class="n">v</span><span class="p">:</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">d4</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
-<span class="n">d4_reverse</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[47]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{&#39;Thursday&#39;: &#39;day&#39;,
- 5: &#39;day_of_week&#39;,
- &#39;Sunday&#39;: &#39;start_of_week&#39;,
- 123: &#39;day_of_year&#39;}</pre>
-</div>
-
 </div>
 
 </div>
