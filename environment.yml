@@ -28,7 +28,7 @@ dependencies:
   - statsmodels
   - urllib3
   - widgetsnbextension
-   - pip:
+  - pip:
     - cufflinks
     - markdown
     - matplotlib-venn
