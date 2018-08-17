@@ -1,0 +1,40 @@
+name: pychakras
+channels:
+  - anaconda-fusion
+  - defaults
+dependencies:
+  - bokeh
+  - html5lib
+  - jsonschema
+  - libpng
+  - markupsafe
+  - matplotlib
+  - notebook
+  - numpy
+  - numpydoc
+  - pandas
+  - pickleshare
+  - pip
+  - python
+  - python-dateutil
+  - requests
+  - scikit-learn
+  - scipy
+  - seaborn
+  - six
+  - sphinx
+  - sphinxcontrib
+  - sphinxcontrib-websupport
+  - statsmodels
+  - urllib3
+  - widgetsnbextension
+   - pip:
+    - cufflinks
+    - markdown
+    - matplotlib-venn
+    - plotly
+    - tensorboard
+    - tensorflow
+    - tensorflow-tensorboard
+    - wikipedia
+
