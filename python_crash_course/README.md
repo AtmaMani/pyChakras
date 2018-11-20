@@ -25,7 +25,7 @@ Seaborn
  - Seaborn basics - distplot, jointplot, pairplot, rugplot
  - Seaborn categorical plotting - bar, count, box, violin, strip, swarm plots
  - Seaborn matrix and regression plots - heatmap, cluster, regression
- - Seaborn grids and customization - pairgrid, facetgrid, customization
+ - Seaborn grids and customization - pairgrid, lmplot, facetgrid, customization
 
 Interactive plotting with Plotly
  - Plotly introduction
