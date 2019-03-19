@@ -90,3 +90,6 @@ ENV/
 
 # atma
 .DS_Store
+
+# atma - DL weights files
+.pth
