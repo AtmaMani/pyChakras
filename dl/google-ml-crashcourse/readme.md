@@ -1,0 +1,1 @@
+Notes is moved to https://atmamani.github.io/projects/dl/dl-concepts/
