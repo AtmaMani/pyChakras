@@ -32,9 +32,7 @@ def puppiesFunction():
     print(name)
     print(description)
     return makeANewPuppy(name, description)
- 
   
- 
 #Make another app.route() decorator here that takes in an integer id in the URI
 @app.route("/puppies/<int:id>", methods = ['GET', 'PUT', 'DELETE'])
 #Call the method to view a specific puppy
@@ -42,7 +40,7 @@ def puppiesFunctionId(id):
   if request.method == 'GET':
     return getPuppy(id)
     
-#Call the method to edit a specific puppy  
+  #Call the method to edit a specific puppy  
   elif request.method == 'PUT':
     name = request.args.get('name', '')
     description = request.args.get('description', '')
