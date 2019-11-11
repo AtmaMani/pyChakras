@@ -1,0 +1,285 @@
+Unnamed: 0,Registration Date,Country,Organization,Current customer?,What would you like to learn?
+0,11/08/2019 06:09 PM EST,Jamaica,The University of the West Indies,,
+1,11/08/2019 06:09 PM EST,Japan,"iLand6 Co.,Ltd.",no,I am interested ArcGIS.
+2,11/08/2019 05:56 PM EST,Canada,Safe Software Inc,yes,data science workflos
+3,11/08/2019 05:51 PM EST,Canada,Le Groupe GeoInfo Inc,yes,general information
+4,11/08/2019 05:26 PM EST,Canada,Safe Software Inc.,,
+5,11/08/2019 05:23 PM EST,United States,USDA/University of Maryland,yes,
+6,11/08/2019 05:23 PM EST,United States,MPT Consulting Services,yes,
+7,11/08/2019 05:16 PM EST,United States,Claritas,yes,integration of arcgis and jupyter notebooks
+8,11/08/2019 05:11 PM EST,United States,Southwestern Energy,yes,Using tools like pandas to perform ETL functions on GIS data; reading/writing to/from spatial data frames to GIS formats quickly
+9,11/08/2019 05:09 PM EST,United States,GBA Architects Engineers,yes,
+10,11/08/2019 05:07 PM EST,United States,University of Texas San Antonio,yes,
+11,11/08/2019 05:02 PM EST,United States,Esri,no,working with Jupyter notebooks
+12,11/08/2019 05:01 PM EST,United States,HDR,yes,
+13,11/08/2019 04:42 PM EST,Canada,Goa,yes,
+14,11/08/2019 04:37 PM EST,Canada,University of Ottawa,yes,
+15,11/08/2019 04:37 PM EST,United States,AC Consulting,no,
+16,11/08/2019 04:36 PM EST,United States,ICF International,yes,
+17,11/08/2019 04:34 PM EST,United States,"Geodata Services, Inc.",yes,More use cases for Jupytr notebooks in ArcGIS
+18,11/08/2019 04:32 PM EST,Canada,Safe Software,no,
+19,11/08/2019 04:30 PM EST,United States,Esri,,
+20,11/08/2019 04:29 PM EST,United States,Texas A&M Forest Service,yes,"Datascience and GIS Integration, ArcGIS Deep learning concepts ands evaluation"
+21,11/08/2019 04:27 PM EST,United States,MISTS LLC,yes,How to carefully clean and prepare data for statistical computations
+22,11/08/2019 04:24 PM EST,United States,raSmith,yes,The jupyter integration
+23,11/08/2019 04:21 PM EST,United States,"Contractor in support of NGTOC, USGS",yes,"better use of the web environment via Jupyter, including how to share with colleagues, etc"
+24,11/08/2019 04:07 PM EST,Venezuela,Provita,yes,
+25,11/08/2019 03:54 PM EST,United States,"CSU, Monterey Bay Seafloor Mapping Lab",yes,Notebook stuff
+26,11/08/2019 03:53 PM EST,Cape Verde,INIDA,yes,"All about ESRI: Modellization, Land use land cover mapping, mapping land degradation, mapping soil erosion"
+27,11/08/2019 03:48 PM EST,United States,Dr.,no,using this for community projects
+28,11/08/2019 03:46 PM EST,Brazil,Imagem Geosistemas,yes,
+29,11/08/2019 03:40 PM EST,United States,Old Dominion Unversity,yes,
+30,11/08/2019 03:34 PM EST,United States,93262,yes,Jupyter
+31,11/08/2019 03:31 PM EST,United States,Stony Brook University,yes,Integration of Jupyter Notebooks to workflows
+32,11/08/2019 03:30 PM EST,United States,"Norwalk, CT  TMP Department",yes,
+33,11/08/2019 03:29 PM EST,Canada,Esri,yes,all the things
+34,11/08/2019 03:28 PM EST,United States,Gadberry Group,yes,
+35,11/08/2019 03:19 PM EST,United States,Esri,yes,
+36,11/08/2019 03:14 PM EST,Brazil,GYN,no,
+37,11/08/2019 03:14 PM EST,United States,Esri,no,
+38,11/08/2019 03:09 PM EST,United States,ManageWater,no,
+39,11/08/2019 03:01 PM EST,Portugal,Student,no,
+40,11/08/2019 03:01 PM EST,United States,AgriNorthwest,yes,
+41,11/08/2019 02:52 PM EST,New Zealand,beca,yes,
+42,11/08/2019 02:48 PM EST,United States,Yavapai County,yes,
+43,11/08/2019 02:47 PM EST,United States,Fairfax County GIS & Mapping,yes,
+44,11/08/2019 02:45 PM EST,United States,GIS Technologies,yes,
+45,11/08/2019 02:40 PM EST,United States,DSC,,
+46,11/08/2019 02:34 PM EST,Canada,Hatfield Consultants,yes,
+47,11/08/2019 02:24 PM EST,United States,UCI,yes,Anything
+48,11/08/2019 02:23 PM EST,United States,Corelogic,yes,
+49,11/08/2019 02:05 PM EST,Peru,SERFOR,yes,Deep Learning with Remote Sensing
+50,11/08/2019 02:02 PM EST,Mexico,Proteccion civil,yes,use python
+51,11/08/2019 02:02 PM EST,Nigeria,Danish Refugee Council,yes,"Improved humanitarian data collection, analysis and visualization"
+52,11/08/2019 01:54 PM EST,Canada,Province of Manitoba,yes,
+53,11/08/2019 01:50 PM EST,United States,Salt Lake City Corporation,,
+54,11/08/2019 01:44 PM EST,Colombia,Esri,,
+55,11/08/2019 01:44 PM EST,Canada,CMHC,no,
+56,11/08/2019 01:41 PM EST,Canada,Ministry of Forestry,yes,Process Flow
+57,11/08/2019 01:39 PM EST,United States,Michigan EGLE,yes,The basics
+58,11/08/2019 01:34 PM EST,United States,Southern Utah Wilderness Alliance,yes,How to use Jupyter and ArcGIS notebooks to facilitate efficient workflows
+59,11/08/2019 01:33 PM EST,United States,GIS Associates,yes,
+60,11/08/2019 01:31 PM EST,United States,Esri España Soluciones Geoespaciales S.L,,
+61,11/08/2019 01:29 PM EST,United States,Long Island Rail Road,yes,Jupiter's analytical capability
+62,11/08/2019 01:29 PM EST,United States,Esri,yes,
+63,11/08/2019 01:26 PM EST,United States,Fairbanks North Star Borough,yes,"Methods for automating workflows, increasing accuracy and documenting methods"
+64,11/08/2019 01:25 PM EST,India,Agilytics,yes,Geoanalytics
+65,11/08/2019 01:24 PM EST,Nigeria,SUNSHINE RENEWABLE ENERGY PARTNERS LIMITED,no,How to use ArcGIS and Jupyter for Geospatial science data analysis
+66,11/08/2019 01:22 PM EST,Canada,Safe Software,no,More basics about Jupyter and the Esri Notebooks tool too.
+67,11/08/2019 01:21 PM EST,Canada,York Region,yes,"Workflow to clean, analyse and visualize data from start to finish"
+68,11/08/2019 01:19 PM EST,United States,Esri,no,how to discuss with executives and professors to use this collaboration platform
+69,11/08/2019 01:17 PM EST,Austria,"University of Salzburg, Department of Geoinformatics",,
+70,11/08/2019 01:06 PM EST,Spain,SIGMA SL,yes,
+71,11/08/2019 01:05 PM EST,Brazil,Imagem,yes,
+72,11/08/2019 01:04 PM EST,United States,City of Sumter,yes,
+73,11/08/2019 12:59 PM EST,Germany,IBM,no,
+74,11/08/2019 12:59 PM EST,Kenya,Esri Eastern Africa Ltd,yes,How to use Jupyter and ArcGIS API for Python
+75,11/08/2019 12:58 PM EST,United States,Austin Community College,yes,Any thing new.
+76,11/08/2019 12:55 PM EST,Kazakhstan,Kazzinc,yes,
+77,11/08/2019 12:55 PM EST,Argentina,Unsj,yes,
+78,11/08/2019 12:50 PM EST,United States,MATPB,yes,
+79,11/08/2019 12:50 PM EST,Canada,Province of Ontario - LRC,yes,
+80,11/08/2019 12:50 PM EST,United States,City of Bellevue,yes,
+81,11/08/2019 12:49 PM EST,United States,,yes,open source Python libraries
+82,11/08/2019 12:47 PM EST,India,Auroville Town Development Council,yes,
+83,11/08/2019 12:46 PM EST,Brazil,Imagem,no,
+84,11/08/2019 12:42 PM EST,United States,noaa,yes,
+85,11/08/2019 12:42 PM EST,United States,INCATech,yes,
+86,11/08/2019 12:41 PM EST,Spain,Minsait by Indra,yes,.
+87,11/08/2019 12:40 PM EST,United States,North Coast Resource Management Inc,yes,Notebook
+88,11/08/2019 12:37 PM EST,United Kingdom,Independent,yes,Data Science for Geospatial Analysis
+89,11/08/2019 12:36 PM EST,United States,It,,
+90,11/08/2019 12:36 PM EST,United States,INCATech,yes,How we can best use Jupyter in our existing and future solutions
+91,11/08/2019 12:34 PM EST,Canada,University of Waterloo,yes,
+92,11/08/2019 12:32 PM EST,United States,City of Los Angeles,yes,How to use Jupyter notebook.
+93,11/08/2019 12:32 PM EST,United States,Utah State University,no,
+94,11/08/2019 12:27 PM EST,United States,City of University Park,yes,
+95,11/08/2019 12:27 PM EST,United States,Fairfax County,yes,
+96,11/08/2019 12:25 PM EST,United States,GAI,yes,
+97,11/08/2019 12:23 PM EST,United States,CSS Inc on contract to NOAA Office for Coastal Management,yes,
+98,11/08/2019 12:21 PM EST,United Kingdom,Venture Information Management,yes,
+99,11/08/2019 12:21 PM EST,United States,TerraSpectra Geomatics,yes,More details about Jupyter
+100,11/08/2019 12:17 PM EST,United States,BAAQMD,yes,using python with arcgis
+101,11/08/2019 12:15 PM EST,United States,Duke University,no,
+102,11/08/2019 12:14 PM EST,Canada,BC Centre for Disease Control,,
+103,11/08/2019 12:11 PM EST,United States,Esri,no,Learn about using Jupyter notebooks in spatial analysis
+104,11/08/2019 12:11 PM EST,Mexico,Personal,yes,
+105,11/08/2019 12:11 PM EST,United States,Utah State University,yes,How to link between ArcGIS and Jupyter
+106,11/08/2019 12:11 PM EST,United States,Saint Mary's University of Minnesota,yes,
+107,11/08/2019 12:10 PM EST,United States,ocpa,yes,
+108,11/08/2019 12:10 PM EST,Canada,University of Manitoba,yes,Geospatial analysis using python
+109,11/08/2019 12:10 PM EST,Ireland,kgut,,
+110,11/08/2019 12:09 PM EST,Canada,City of Moncton,yes,
+111,11/08/2019 12:09 PM EST,United States,National Park Service,yes,
+112,11/08/2019 12:08 PM EST,Canada,Municipality of Clarington,yes,More about how to use Jupiter Notebooks.
+113,11/08/2019 12:08 PM EST,United States,University of Wisconsin-Milwaukee,yes,Jupyter notebooks a bit better
+114,11/08/2019 12:06 PM EST,Canada,"Ministry of Forests, Land Natural Resources Operations",yes,colleague mail
+115,11/08/2019 12:05 PM EST,United States,nu,yes,python scripting
+116,11/08/2019 12:05 PM EST,United States,CivicMapper,yes,
+117,11/08/2019 12:04 PM EST,Canada,Toronto Public Health,yes,Use of Jupyter
+118,11/08/2019 12:01 PM EST,United States,RMS,yes,
+119,11/08/2019 12:00 PM EST,Canada,BGC Engineering Inc,yes,
+120,11/08/2019 12:00 PM EST,United States,National Park Service,yes,Potential for analysis workflows
+121,11/08/2019 12:00 PM EST,United States,NOAA National Weather Service,yes,
+122,11/08/2019 11:57 AM EST,Brazil,IMAGEM,yes,
+123,11/08/2019 11:57 AM EST,Bolivia,ENDE,yes,"notebook, jupyter"
+124,11/08/2019 11:57 AM EST,United States,USDOT,yes,
+125,11/08/2019 11:57 AM EST,Spain,Esri Spain,yes,Use of Jupyter Notebooks
+126,11/08/2019 11:57 AM EST,United States,US Forest Service,yes,
+127,11/08/2019 11:56 AM EST,United States,Enerplus,yes,
+128,11/08/2019 11:54 AM EST,United States,smco,yes,stuff
+129,11/08/2019 11:51 AM EST,United States,WSDOTD,yes,
+130,11/08/2019 11:49 AM EST,Canada,Pelmorex,yes,
+131,11/08/2019 11:49 AM EST,United States,3-GIS LLC,yes,
+132,11/08/2019 11:49 AM EST,United States,MSA Professional Services,yes,Better ways to integrate Python into engineering workflows throughout our company
+133,11/08/2019 11:48 AM EST,United States,CCOM/JHC UNH,yes,
+134,11/08/2019 11:48 AM EST,United States,Clark Nexsen,yes,
+135,11/08/2019 11:47 AM EST,United States,USDA Forest Service,yes,whats new
+136,11/08/2019 11:47 AM EST,United States,Missoula County Community and Planning Services,yes,
+137,11/08/2019 11:45 AM EST,United States,City of Gainesville,yes,About Jupyter
+138,11/08/2019 11:45 AM EST,Canada,Government of Alberta,yes,
+139,11/08/2019 11:45 AM EST,United States,Utah State Univ,,How to setup arcgis and jupyter notebooks
+140,11/08/2019 11:45 AM EST,United States,City of Mesa,yes,Setting up Jupiter notebooks / environments management
+141,11/08/2019 11:42 AM EST,United States,Texas Christian University,yes,
+142,11/08/2019 11:41 AM EST,United States,USGS,yes,
+143,11/08/2019 11:41 AM EST,Canada,SRK Consulting,yes,
+144,11/08/2019 11:40 AM EST,United States,Nelson Nygaard consulting,yes,
+145,11/08/2019 11:40 AM EST,United Kingdom,Usa,,
+146,11/08/2019 11:40 AM EST,United States,Washington University in St. Louis,yes,"install and environment set up, licensing"
+147,11/08/2019 11:39 AM EST,United States,Lynker @ NOAA OCM,yes,
+148,11/08/2019 11:39 AM EST,Nigeria,Geospatial Data Solutions,yes,"Python Programming, Data Science, Machine Learning"
+149,11/08/2019 11:39 AM EST,Canada,CMHC,yes,Data Science tools in ArcPy
+150,11/08/2019 11:39 AM EST,United States,Consultant,yes,
+151,11/08/2019 11:38 AM EST,United States,Choate Rosemary Hall,yes,How to combine ArcGIS Tools and Jupyter
+152,11/08/2019 11:38 AM EST,United States,Vermont Dept. of Health,yes,
+153,11/08/2019 11:37 AM EST,United States,Esri,yes,Data Science techniques
+154,11/08/2019 11:36 AM EST,United States,"Central Electric Cooperative, Inc.",yes,things to make my job more efficient
+155,11/08/2019 11:35 AM EST,United States,Hunter College CUNY,yes,Please provide examples with data items that don't expires (like the majority of those on your developer examples website)
+156,11/08/2019 11:35 AM EST,United States,HCP Monitors,yes,Data interoperability opportunities and constraints between ESRI's proprietary data formats and Python open source standards
+157,11/08/2019 11:35 AM EST,United States,Esri,no,
+158,11/08/2019 11:34 AM EST,United States,"INTERA, Inc.",yes,
+159,11/08/2019 11:32 AM EST,United States,Esri,no,"In general, more about data science"
+160,11/08/2019 11:32 AM EST,Canada,NSCC,yes,The integration between the two platforms
+161,11/08/2019 11:31 AM EST,Canada,Arbor-Tech Utility Services Ltd.,yes,What is and how to use ArcGIS Notebooks and Jupyter
+162,11/08/2019 11:31 AM EST,United States,University of Utah,yes,
+163,11/08/2019 11:31 AM EST,United States,Technology Planning,yes,
+164,11/08/2019 11:31 AM EST,United States,City of Charleston,yes,Use case to notebooks as developer
+165,11/08/2019 11:30 AM EST,Kenya,Independent Consultant,,
+166,11/08/2019 11:30 AM EST,United States,State of South Dakota,yes,
+167,11/08/2019 11:29 AM EST,United States,University of Denver,yes,
+168,11/08/2019 11:29 AM EST,Canada,City of Medicine Hat,yes,How to Use ArcGIS and Jupyter
+169,11/08/2019 11:29 AM EST,United States,SEPI,yes,
+170,11/08/2019 11:29 AM EST,United States,fda,yes,use Jupyter to increase transparency and build reproducible research
+171,11/08/2019 11:28 AM EST,United States,SUNY Empire State College,no,one of the topics I have been lately exploring is how to make the maps web-enabled?
+172,11/08/2019 11:27 AM EST,United States,SalientCRGT,yes,
+173,11/08/2019 11:27 AM EST,United States,MSA Professional Services,,
+174,11/08/2019 11:27 AM EST,United States,"Tetra Tech, Inc.",yes,More about Jupyter Notebooks
+175,11/08/2019 11:27 AM EST,France,Capgemini,yes,
+176,11/08/2019 11:26 AM EST,Thailand,-,,
+177,11/08/2019 11:26 AM EST,United States,American Red Cross,yes,
+178,11/08/2019 11:26 AM EST,United States,US EPA,yes,I'm familiar with Jupyter but I'd like to know best practices
+179,11/08/2019 11:26 AM EST,United States,WGFD,yes,
+180,11/08/2019 11:26 AM EST,Canada,CMHC,yes,
+181,11/08/2019 11:25 AM EST,Canada,CMHC,yes,
+182,11/08/2019 11:25 AM EST,United States,Miami University,yes,
+183,11/08/2019 11:25 AM EST,United States,The University of Texas at Dallas,yes,
+184,11/08/2019 11:24 AM EST,United States,California State University,yes,
+185,11/08/2019 11:24 AM EST,United States,Lincoln Parish Police Jury,yes,Geospatial data science
+186,11/08/2019 11:23 AM EST,United States,Aspect Consulting,yes,
+187,11/08/2019 11:23 AM EST,United States,Newton County Georgia Board of Commissioners,yes,
+188,11/08/2019 11:22 AM EST,United States,Att Services,yes,
+189,11/08/2019 11:22 AM EST,Italy,University of Cagliari,no,
+190,11/08/2019 11:22 AM EST,France,Sixense,,
+191,11/08/2019 11:21 AM EST,United States,Duke University,yes,
+192,11/08/2019 11:21 AM EST,United States,Virginia Tech,yes,
+193,11/08/2019 11:21 AM EST,Canada,Canada Mortgage and Housing Corporation,yes,
+194,11/08/2019 11:21 AM EST,United States,University of Massachusetts Amherst,yes,
+195,11/08/2019 11:20 AM EST,United States,Nassau County,yes,Geospatial Datascienc
+196,11/08/2019 11:20 AM EST,Canada,York Region,yes,
+197,11/08/2019 11:20 AM EST,United States,BNSF Railway Company,yes,How Jupyter can help my organization.
+198,11/08/2019 11:19 AM EST,Canada,Regional Municipality of Durham,yes,
+199,11/08/2019 11:19 AM EST,Canada,York Region,yes,
+200,11/08/2019 11:19 AM EST,United States,my house,yes,the things i don't know that i don't know.
+201,11/08/2019 11:18 AM EST,United States,Carolina Population Center,yes,
+202,11/08/2019 11:17 AM EST,United States,USDA,yes,awareness
+203,11/08/2019 11:17 AM EST,United States,Noble County Government,yes,How to use the Jupyter Notebook environment to perform analysis that's not available in ArcGIS Pro because of licensing.
+204,11/08/2019 11:17 AM EST,United States,California Water Service Co,yes,Data Science and use of python
+205,11/08/2019 11:16 AM EST,United States,University of Georgia,yes,
+206,11/08/2019 11:16 AM EST,United States,Upriver GIS,yes,Looking to improve my data analysis capabilities and how I can integrate into ArcGIS
+207,11/08/2019 11:16 AM EST,United States,Weyeruaeuser Company,,
+208,11/08/2019 11:15 AM EST,Canada,University of Calgary,yes,
+209,11/08/2019 11:14 AM EST,United States,St. Lawrence University,yes,more about Juypter notebooks and how it can fit into ESRI workflows
+210,11/08/2019 11:13 AM EST,United States,USDA-ARS,yes,How to use the Jupyter notebooks version of ESRI and what do I need to get started within my company...
+211,11/08/2019 11:13 AM EST,United States,Marshall University,yes,
+212,11/08/2019 11:13 AM EST,Canada,Safe Software In.,yes,"tools for extracting centreline from real time point data(i.e. cell phone locations, AIS locations)"
+213,11/08/2019 11:13 AM EST,United States,City of Roanoke,yes,
+214,11/08/2019 11:12 AM EST,United States,Dutchess County Office of Central and Information Services,yes,
+215,11/08/2019 11:10 AM EST,United States,Iberia Parish Government,yes,I would like to see if these workflows would be applicable to my job.
+216,11/08/2019 11:10 AM EST,Canada,Manitoba Agriculture and Resource Development,yes,
+217,11/08/2019 11:09 AM EST,United States,CPS Energy,yes,general knowledge
+218,11/08/2019 11:08 AM EST,United States,city of walnut creek,yes,What notebooks and Jupyter can do for disaster response.
+219,11/08/2019 11:07 AM EST,United States,The Hartford,yes,
+220,11/08/2019 11:06 AM EST,United States,Georgia Institute of Technology,yes,
+221,11/08/2019 11:06 AM EST,Canada,Edmonton Metropolitan Region Board,yes,
+222,11/08/2019 11:05 AM EST,Canada,"Geosys Enterprise Solutions Pvt. Ltd.,",no,Data analytics
+223,11/08/2019 11:04 AM EST,United States,OCSO,yes,Content as advertised
+224,11/08/2019 11:04 AM EST,United States,NYCDOT,yes,
+225,11/08/2019 11:02 AM EST,United States,Syncadd Systems,yes,
+226,11/08/2019 09:29 AM EST,United States,Eagle River Water & Sanitation District,yes,How to apply ArcGIS Notebooks
+227,11/08/2019 01:46 AM EST,Greece,HELLENIC CADASTRE,,
+228,11/07/2019 12:52 PM EST,United States,Esri,yes,
+229,11/07/2019 06:47 AM EST,India,BSES YAMUNA POWER LTD,yes,DATA SCIENCE WITH GIS
+230,11/06/2019 05:10 PM EST,United States,DWR,yes,
+231,11/06/2019 12:38 PM EST,United States,San Jose Water,yes,
+232,11/05/2019 08:25 PM EST,United States,City of Monterey,yes,
+233,11/05/2019 03:12 PM EST,United States,MSA Professional Services,yes,
+234,11/05/2019 01:14 PM EST,Spain,NONE,,
+235,11/05/2019 12:23 PM EST,United States,Portland Community College,,Geospatial data science workflow analysis
+236,11/05/2019 11:41 AM EST,United States,Department of Water Resources,,Current trends in data science
+237,11/05/2019 11:28 AM EST,United States,California Department of Water Resources,,I would like to learn both how I can improve my GIS skills and how to use other software relevant to GIS and mapping.
+238,11/05/2019 10:14 AM EST,United States,Xentity,,
+239,11/05/2019 10:12 AM EST,United States,PG&E,,
+240,11/05/2019 08:59 AM EST,United States,"University of Maryland, College Park",,
+241,11/05/2019 08:39 AM EST,United States,USDA,,More about notebooks and GIS
+242,11/05/2019 08:11 AM EST,Nepal,Department of Mines and Geology (DMG),,All related to this topics
+243,11/05/2019 03:59 AM EST,Germany,BGR,,
+244,11/05/2019 03:06 AM EST,United Kingdom,LPS,,
+245,11/05/2019 02:38 AM EST,Denmark,Univ. of Copenhagen,,
+246,11/04/2019 11:48 PM EST,India,Avineon India,,Jupyter usage
+247,11/04/2019 11:25 PM EST,South Africa,Esri South Africa,,
+248,11/04/2019 11:08 PM EST,India,Niit,,
+249,11/04/2019 10:33 PM EST,United States,Verizon,,General knowledge
+250,11/04/2019 08:16 PM EST,India,BSES,,
+251,11/04/2019 07:08 PM EST,United States,CNRA/DWR,,
+252,11/04/2019 06:57 PM EST,United States,Covered California,,About Notebooks
+253,11/04/2019 06:12 PM EST,Philippines,Energy Development Corporation,,
+254,11/04/2019 04:13 PM EST,United States,Morgan State Univrsity,,about the topic
+255,11/04/2019 04:01 PM EST,United States,DWR,,
+256,11/04/2019 03:54 PM EST,Netherlands,HAS University of applied sciences,,
+257,11/04/2019 03:10 PM EST,United States,Hobart and William Smith Colleges,,How to implement ArcGIS notebooks at an enterrpise scale.
+258,11/04/2019 02:24 PM EST,United States,Bright Lite Energy,,
+259,11/04/2019 02:23 PM EST,United States,City of New York,,
+260,11/04/2019 02:14 PM EST,United States,Intermap Technologies,,
+261,11/04/2019 02:13 PM EST,United States,University of Southern California,,What it says!
+262,11/04/2019 02:11 PM EST,United States,GeoDecisions,,
+263,11/04/2019 02:03 PM EST,Canada,Lakehead University,,
+264,11/04/2019 01:57 PM EST,United States,Phillips 66,,
+265,11/04/2019 01:54 PM EST,United States,Department of Water Resources,,
+266,11/04/2019 01:48 PM EST,United States,BP,,
+267,11/04/2019 01:47 PM EST,United States,State of California,,
+268,11/04/2019 01:32 PM EST,Canada,Min. Public safety,,initiation to data science applied to geomatics
+269,11/04/2019 01:28 PM EST,United States,ETM Inc,,
+270,11/04/2019 01:27 PM EST,United States,SCAG,,
+271,11/04/2019 01:27 PM EST,United States,HDR,,
+272,11/04/2019 01:24 PM EST,Canada,Environment and Climate Change Canada,,exmples of application of ArcGIS with Jupyter
+273,11/04/2019 01:19 PM EST,United States,California Department of Water Resources,,
+274,11/04/2019 01:18 PM EST,United States,University of Texas at El Paso,,
+275,11/04/2019 01:14 PM EST,United States,Kinder Morgan Inc,,
+276,11/04/2019 01:13 PM EST,United States,Pima County,,
+277,11/04/2019 01:10 PM EST,United States,Noble Research Institute,,
+278,11/04/2019 01:03 PM EST,United States,Southern California Association of Governments,,
+279,11/04/2019 01:03 PM EST,Greece,Geomatics S.A,,
+280,11/04/2019 01:03 PM EST,Canada,UBC Geography,,
+281,11/04/2019 12:46 PM EST,United States,www.geotree.uni.edu,,"data science, jupyter noteboook"
+282,11/03/2019 10:06 AM EST,United Arab Emirates,Directorate of Town Planning and survey,,
+283,11/02/2019 11:24 PM EDT,United States,Oregon State University,,
