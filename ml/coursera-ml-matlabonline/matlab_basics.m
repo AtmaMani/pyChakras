@@ -1,0 +1,1 @@
+x = 23;# equationsy = 52 + 2*x^2 - 3*x;printf(y);a=[1,2,3,4];b = [2,3,4,5];plot(a,b);x = -10:0.1:10;plot (x, sin (x));xlabel ("x");ylabel ("sin (x)");title ("Simple 2-D Plot");
