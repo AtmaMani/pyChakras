@@ -23,7 +23,7 @@ error_fn = sum((hypothesis_fn - y).^2);
 loss_fn = error_fn ./(2*m);
 
 % return
-J = loss_fn
+J = loss_fn;
 % =========================================================================
 
 end
