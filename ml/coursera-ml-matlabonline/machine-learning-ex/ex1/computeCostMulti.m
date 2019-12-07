@@ -13,10 +13,16 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
+% Compute hypothesis function. Which is given by theta'*x
+hypothesis_fn = X*theta;
 
+% Compute error function which is given by Sum(square(error))
+error_fn = sum((hypothesis_fn - y).^2);
 
+% Compute loss function which is error function divided by 2*training samples
+loss_fn = error_fn ./(2*m);
 
-
-% =========================================================================
-
+% return
+J = loss_fn;
+% ============
 end

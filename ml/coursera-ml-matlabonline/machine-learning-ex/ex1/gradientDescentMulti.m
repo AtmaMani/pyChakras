@@ -5,28 +5,30 @@ function [theta, J_history] = gradientDescentMulti(X, y, theta, alpha, num_iters
 
 % Initialize some useful values
 m = length(y); % number of training examples
+n = size(X, 2); % get number of thetas
 J_history = zeros(num_iters, 1);
+theta_history = zeros(num_iters,n);
 
+%fprintf('Initial theta0 %f theta1 %f', theta(1), theta(2));
 for iter = 1:num_iters
-
-    % ====================== YOUR CODE HERE ======================
-    % Instructions: Perform a single gradient step on the parameter vector
-    %               theta. 
-    %
-    % Hint: While debugging, it can be useful to print out the values
-    %       of the cost function (computeCostMulti) and gradient here.
-    %
-
-
-
-
-
-
-
-
-
-
-
+  
+  % Calculate error, which is (thetaTranspose * X vector) - y
+  error = (X*theta - y);
+  
+  % multiply with X vector and learning rate over m
+  term_vector = zeros(n,1);
+  
+  for theta_iter = 1:n
+    current_term = (alpha/m) * sum(error .* X(:,theta_iter));
+    term_vector(theta_iter) = current_term;
+  endfor
+  
+  % find update values
+  theta = theta - term_vector;
+  theta_history(iter,1) = theta(1);
+  theta_history(iter,2) = theta(2);
+  %fprintf('Current theta0 %f theta1 %f', theta(1), theta(2));
+  
     % ============================================================
 
     % Save the cost J in every iteration    
