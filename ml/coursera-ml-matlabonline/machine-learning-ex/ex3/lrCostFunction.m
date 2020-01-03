@@ -36,14 +36,22 @@ grad = zeros(size(theta));
 %           grad = grad + YOUR_CODE_HERE (using the temp variable)
 %
 
+h_theta_x  = sigmoid(X*theta);
+term1 = y.*log(h_theta_x);
+term2 = (1-y).*log(1-h_theta_x);
+term_a = (-1/m)*sum(term1+term2);
 
+term_b1 = sum(theta(2:end).^2); % dont penalize theta0
+term_b2 = lambda/(2*m);
 
+J = term_a + term_b1*term_b2;
 
+% calculate gradient - dont penalize theta0
+term_g1 = ((h_theta_x - y)'*X)./m;
+penalty = (lambda/m).*theta;
+penalty(1) = 0; %reset penalty for theta0 to 0
 
-
-
-
-
+grad = term_g1' + penalty;
 
 % =============================================================
 

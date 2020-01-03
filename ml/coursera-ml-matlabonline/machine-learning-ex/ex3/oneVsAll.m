@@ -49,18 +49,25 @@ X = [ones(m, 1) X];
 %                 initial_theta, options);
 %
 
+% Create y matrix for each class
+a = 1:num_labels; % possible class outputs
 
+% converge using fmincg function
+pkg load optim
 
-
-
-
-
-
-
-
-
-
-% =========================================================================
-
+for class=1:num_labels,
+  y_index = (y==class); % find places that contain the current class
+ 
+  % train for each class
+  initial_theta = zeros(n + 1, 1);
+  options = optimset('GradObj', 'on', 'MaxIter', 50);
+  
+  % Run fmincg to obtain the optimal theta
+  % This function will return theta and the cost
+  [theta] = ...
+         fmincg (@(t)(lrCostFunction(t, X, y_index, lambda)), ...
+                 initial_theta, options);
+  all_theta(class,:) = theta(:);
+endfor
 
 end

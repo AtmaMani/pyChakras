@@ -21,15 +21,24 @@ p = zeros(size(X, 1), 1);
 %       can use max(A, [], 2) to obtain the max for each row.
 %
 
+% get first training set
+for row = 1:m,
+  x_1 = X(row,:)'; % row i, all cols
+  x_1 = [1;x_1]; % 401x1 col vector with a bias node
 
+  z2 = Theta1*x_1; % 25x401 X 401x1 = 25x1 
+  a2 = sigmoid(z2); % 25x1
 
+  a2_1 = [1; a2]; % 26x1
+  z3 = Theta2*a2_1; % 10x26 X 26x1 = 10x1
 
+  a3 = sigmoid(z3); % 10x1
 
-
-
-
+  % find index of class with max prob
+  [p_max, p_index] = max(a3', [], 2);
+  
+  p(row) = p_index;
+endfor
 
 % =========================================================================
-
-
 end

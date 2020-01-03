@@ -15,7 +15,7 @@ num_labels = size(all_theta, 1);
 p = zeros(size(X, 1), 1);
 
 % Add ones to the X data matrix
-X = [ones(m, 1) X];
+X2 = [ones(m, 1) X];
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: Complete the following code to make predictions using
@@ -30,13 +30,16 @@ X = [ones(m, 1) X];
 %       for each row.
 %       
 
+% predict z values
+z = X2*all_theta'; % do a 5000x401 x 401x10 mat multiplication. z is 5000x10
 
+% predict sigmoid of z
+z_sigmoid = sigmoid(z);
 
+% find max of a 2D matrix
+[z_prob, z_index] = max(z_sigmoid, [], 2); % find location of max prob in each row
 
-
-
-
+p=z_index; % since index of max element is same as class value (remember 0 is mapped to 10);
 % =========================================================================
-
 
 end
