@@ -1,0 +1,1 @@
+load('ex4data1.mat'); %loads X, ym = size(X,1); %5000sel = randperm(size(X,1));sel = sel(1:100);displayData(X(sel,:));% load pre-trained NN weights - Theta1, Theta2load('ex4weights.mat');
