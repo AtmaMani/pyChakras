@@ -41,10 +41,11 @@ term1 = y.*log(h_theta_x);
 term2 = (1-y).*log(1-h_theta_x);
 term_a = (-1/m)*sum(term1+term2);
 
+% apply penalty
 term_b1 = sum(theta(2:end).^2); % dont penalize theta0
 term_b2 = lambda/(2*m);
 
-J = term_a + term_b1*term_b2;
+J = term_a + term_b1*term_b2;  % cost with penalty
 
 % calculate gradient - dont penalize theta0
 term_g1 = ((h_theta_x - y)'*X)./m;
