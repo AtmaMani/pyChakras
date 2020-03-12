@@ -1,8 +1,9 @@
 name: pychakras
 channels:
   - anaconda-fusion
-  - conda-forge
   - defaults
+  - conda-forge
+  - plotly
 dependencies:
   - bokeh
   - html5lib
@@ -18,7 +19,7 @@ dependencies:
   - pip
   - python
   - python-dateutil
-  - plotly_express
+  - plotly
   - requests
   - scikit-learn
   - scipy
