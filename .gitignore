@@ -91,5 +91,6 @@ ENV/
 # atma
 .DS_Store
 .vscode
+.idea
 # atma - DL weights files
 .pth
