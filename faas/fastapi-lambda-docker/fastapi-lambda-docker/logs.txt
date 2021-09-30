@@ -1,0 +1,5 @@
+END RequestId: 2f86571b-4da2-4e47-8a80-2c2b54143dae
+REPORT RequestId: 2f86571b-4da2-4e47-8a80-2c2b54143dae	Init Duration: 0.33 ms	Duration: 361.86 ms	Billed Duration: 400 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+/hello was called
+END RequestId: 44a68469-9e6e-4e7b-bc84-d8bc7e5bb1eb
+REPORT RequestId: 44a68469-9e6e-4e7b-bc84-d8bc7e5bb1eb	Init Duration: 0.32 ms	Duration: 361.88 ms	Billed Duration: 400 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	

@@ -30,19 +30,27 @@
       <br>
             Click on the button below to upload some jpg.
     </div>
-    <a  href="/uploadImg">
-    <p style="padding: 10px;
-    background-color: #386de2;
-    color: #ffffff;
-    font-family: Arial" align="center">Upload your photo!</p>
-    </a>
 
     <p><i>Only images of type JPG are supported</i></p>
-    <form method=post enctype=multipart/form-data action="/uploadImg/">
-      <input type=file name=file accept=".jpg,.jpeg">
-      <input type=submit value=Upload>
+    <form method="post" enctype=multipart/form-data action="uploadImg">
+      <input type="file" name=file accept=".jpg,.jpeg">
+      <input type="submit" value="Upload pic">
     </form>
 
+    <h4 align="center" style="font-family: Monaco"> Other APIs available on this site:</h4>
+    <div align="left">
+        <br>
+        <a href="hello">Say hello</a>
+
+        <br>
+        <a href="listFiles">List img files uploaded</a>
+
+        <br>
+        <a href="items">Get list of items added</a>
+
+        <br>
+        <a href="genRandomNumbers/20">Generate Random Numbers: num = 20</a>
+    </div>
     </p>
 
 </body>

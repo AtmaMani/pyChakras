@@ -33,6 +33,36 @@ Resources:
           Properties:
             Path: /items
             Method: get
+        CreateItem:
+          Type: Api
+          Properties:
+            Path: /items
+            Method: post
+        GetCurrDir:
+          Type: Api
+          Properties:
+            Path: /getCurrDir
+            Method: get
+        ListImgFiles:
+          Type: Api
+          Properties:
+            Path: /listFiles
+            Method: get
+        UploadImg:
+          Type: Api
+          Properties:
+            Path: /uploadImg
+            Method: post
+        UploadImg2:
+          Type: Api
+          Properties:
+            Path: /uploadImg2
+            Method: post
+        Hello:
+          Type: Api
+          Properties:
+            Path: /hello
+            Method: get
     Metadata:
       Dockerfile: Dockerfile
       DockerContext: ./app
@@ -42,12 +72,12 @@ Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
   # Find out more about other implicit resources you can reference within SAM
   # https://github.com/awslabs/serverless-application-model/blob/master/docs/internals/generated_resources.rst#api
-  FastAPIApi:
+  FastAPIFunctionApi:
     Description: "API Gateway endpoint URL for Prod stage for Fast API function"
     Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"
-  HelloWorldFunction:
+  FastAPIFunction:
     Description: "Hello World Lambda Function ARN"
-    Value: !GetAtt HelloWorldFunction.Arn
-  HelloWorldFunctionIamRole:
+    Value: !GetAtt FastAPIFunction.Arn
+  FastAPIFunctionIamRole:
     Description: "Implicit IAM Role created for Hello World function"
-    Value: !GetAtt HelloWorldFunctionRole.Arn
+    Value: !GetAtt FastAPIFunctionRole.Arn

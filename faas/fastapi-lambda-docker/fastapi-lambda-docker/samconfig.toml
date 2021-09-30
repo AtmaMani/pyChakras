@@ -1,0 +1,12 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "FastAPILambda1"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-e7w5utol4v72"
+s3_prefix = "FastAPILambda1"
+region = "us-west-2"
+profile = "atma_lambda"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = ["FastAPIFunction=939098422637.dkr.ecr.us-west-2.amazonaws.com/fastapilambda1d6fe3edf/fastapifunctionead79d0drepo"]
